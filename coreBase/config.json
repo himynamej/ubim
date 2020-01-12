@@ -1,0 +1,5 @@
+{
+  "mongo_url": "mongodb://javad:javadah@localhost:27017/admin",
+  "database_name": "leco_srv",
+  "server_port": "8002"
+}
