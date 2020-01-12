@@ -1,0 +1,30 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "io.grpc.examples.helloworld";
+option java_outer_classname = "HelloWorldProto";
+
+package fileserv;
+
+service Service {
+    rpc broadCastRequest(Auth) returns (Response) {}
+    rpc NormRequest(noAuth) returns (Response) {}
+}
+
+// The request message containing the user's name.
+message Auth {
+    bytes Payload = 1;
+    string Group=2;
+    string Key=3;
+    string token=4;
+}
+message noAuth {
+    bytes Payload = 1;
+    string Group=2;
+    string Key=3;
+}
+message Response {
+    string result = 1;
+    string message=2;
+    bytes Payload=3;
+}

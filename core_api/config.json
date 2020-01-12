@@ -1,0 +1,26 @@
+{
+  "server_port": "8002",
+  "allowed_origins": [
+    "*"
+  ],
+  "allowed_headers": [
+    "Cache-Control",
+    "Content-Type",
+    "Bearer",
+    "bearer ",
+    "content-type",
+    "Accept",
+    "accept",
+    "Authorization"
+  ],
+  "allowed_methods": [
+    "GET",
+    "POST",
+    "OPTIONS"
+  ],
+  "allow_credentials": true,
+  "options_passthrough": true,
+  "debug": true,
+  "run_time":"/home/mohammadjavad/go/src/core_api/runtime"
+  
+}
